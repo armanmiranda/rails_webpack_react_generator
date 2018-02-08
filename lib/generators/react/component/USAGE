@@ -1,0 +1,8 @@
+Description:
+    Creates a .jsx Component file with minimal but functional content for the corresponding React page.
+
+Example:
+    "rails generate react:component foo fooAppPage"
+
+    This will create:
+      ../foo/components/fooAppPage.jsx

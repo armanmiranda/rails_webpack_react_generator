@@ -1,0 +1,3 @@
+module RailsWebpackReactGenerator
+  # Your code goes here...
+end

@@ -1,0 +1,6 @@
+import React from "react"
+import ReactDOM from "react-dom"
+import <%= root_component_name %>  from "./components/<%= root_component_name %>"
+
+const <%= page_name  %>Element = document.querySelector("#<%= page_name  %>Element")
+ReactDOM.render(<<%= root_component_name %>/>, <%= page_name %>Element)

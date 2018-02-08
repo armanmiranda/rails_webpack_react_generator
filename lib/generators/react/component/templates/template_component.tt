@@ -1,0 +1,17 @@
+import React, { Component } from "react"
+
+class <%= component_name %> extends Component {
+  constructor() {
+    super()
+    this.state = {
+    }
+  }
+
+  render(){
+    return(
+      <h2>Test Content</h2>
+    )
+  }
+}
+
+export default <%= component_name %>
