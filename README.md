@@ -49,6 +49,7 @@ $ bundle
 0| <div id="homeElement"></div>
 1| <%= javascript_pack_tag 'application' %>    
 ```
+
     
     * Now run ```rails server``` and ```./bin/webpack-dev-server``` and navigate to ```localhost:5000/pages/home``` it should show the text ```Test Content```
     
