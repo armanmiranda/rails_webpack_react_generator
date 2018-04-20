@@ -18,8 +18,7 @@ $ bundle
 ```
 
 ## Sample Usage
-* Some preparations to do before using the gem:
-     run the following code to start a new react project (requires rails 5.1)
+Run the following code to start a new react project (requires rails 5.1)
 
 ```bash
 $ rails new react-generator-sample --webpack=react -T
@@ -50,7 +49,7 @@ Now open the view under `views/pages/home.html.erb` and change its contents to t
 1| <%= javascript_pack_tag 'application' %>    
 ```
     
-     Now run `rails server` and `./bin/webpack-dev-server` and navigate to `localhost:5000/pages/home` it should show the text `Test Content`
+Now run `rails server` and `./bin/webpack-dev-server` and navigate to `localhost:5000/pages/home` it should show the text `Test Content`
     
 ## Generators
 * `react:page_scaffold [parent_dir_name] [root_component_name]`
