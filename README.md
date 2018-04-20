@@ -20,30 +20,30 @@ $ bundle
 ## Sample Usage
 * Some preparations to do before using the gem:
     * run the following code to start a new react project (requires rails 5.1)
-    ```bash
-    $ rails new react-generator-sample --webpack=react -T
-    ```
+```bash
+$ rails new react-generator-sample --webpack=react -T
+```
     
     * Upon generation go to the project folder and create a new controller
-        ```bash
-        $ rails generate controller pages home
-        ```
+```bash
+$ rails generate controller pages home
+```
     
-    * Make sure to do the following as well, all of them are under ```app/javascript/packs```:
-        * remove the default ```hello_react.jsx``` file from the packs folder.
-        * also delete the contents of the ```application.js``` file.
+    * Make sure to do the following as well, all of them are under `app/javascript/packs`:
+        * remove the default `hello_react.jsx` file from the packs folder.
+        * also delete the contents of the `application.js` file.
     
     * We can now generate a new react page via ```react:page_scaffold``` by executing
-        ```bash
-        $ rails generate react:page_scaffold home App
-        ```
+```bash
+$ rails generate react:page_scaffold home App
+```
         this will generate a directory ```home/``` and under it is the ```home/components/``` folder which contains the root of the react page which we named ```App```. The generator will also import our directory into the ```packs/application.js``` file and it will create an ```index.js``` which selects our component target.
     
     * Now open the view under ```views/pages/home.html.erb``` and change its contents to these:
-        ```ruby
-        0| <div id="homeElement"></div>
-        1| <%= javascript_pack_tag 'application' %>    
-        ```
+```ruby
+0| <div id="homeElement"></div>
+1| <%= javascript_pack_tag 'application' %>    
+```
     
     * Now run ```rails server``` and ```./bin/webpack-dev-server``` and navigate to ```localhost:5000/pages/home``` it should show the text ```Test Content```
     
