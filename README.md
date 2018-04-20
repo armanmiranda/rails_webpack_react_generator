@@ -24,18 +24,22 @@ $ bundle
       ```bash
       $ rails new react-generator-sample --webpack=react -T
       ```
+
     * Upon generation go to the project folder and create a new controller
-```bash
-$ rails generate controller pages home
-```
+        
+      ```bash
+      $ rails generate controller pages home
+      ```
+
     * Make sure to do the following as well, all of them are under `app/javascript/packs`:
         * remove the default `hello_react.jsx` file from the packs folder.
         * also delete the contents of the `application.js` file.
     
     * We can now generate a new react page via ```react:page_scaffold``` by executing
-```bash
-$ rails generate react:page_scaffold home App
-```
+
+      ```bash
+      $ rails generate react:page_scaffold home App
+      ```
         this will generate a directory ```home/``` and under it is the ```home/components/``` folder which contains the root of the react page which we named ```App```. The generator will also import our directory into the ```packs/application.js``` file and it will create an ```index.js``` which selects our component target.
     
     * Now open the view under ```views/pages/home.html.erb``` and change its contents to these:
