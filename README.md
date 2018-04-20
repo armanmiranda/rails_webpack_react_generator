@@ -20,9 +20,9 @@ $ bundle
 ## Sample Usage
 * Some preparations to do before using the gem:
     * run the following code to start a new react project (requires rails 5.1)
-```bash
-$ rails new react-generator-sample --webpack=react -T
-```
+  ```bash
+  $ rails new react-generator-sample --webpack=react -T
+  ```
     * Upon generation go to the project folder and create a new controller
 ```bash
 $ rails generate controller pages home
