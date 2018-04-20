@@ -23,7 +23,9 @@ $ bundle
 ```bash
 $ rails new react-generator-sample --webpack=react -T
 ```
+
     * Upon generation go to the project folder and create a new controller
+
 ```bash
 $ rails generate controller pages home
 ```
