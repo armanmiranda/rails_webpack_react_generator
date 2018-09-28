@@ -9,7 +9,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rails_webpack_react_generator', git: "git@bitbucket.org:armanmiranda/railswebpackreactgenerator.git"
+gem 'rails_webpack_react_generator', git: "git@github.com:armanmiranda/rails_webpack_react_generator.git"
 ```
 
 And then execute:
